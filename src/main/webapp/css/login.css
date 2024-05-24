@@ -1,0 +1,170 @@
+@charset "UTF-8";
+:root {
+  --primary-color: #c80000;
+  --background-color: #f2f2f2;
+}
+
+.login {
+  padding: 200px 0 40px;
+}
+
+.login > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-form {
+  width: 50%;
+  height: auto;
+}
+
+.login-form:nth-child(1) {
+  border-right: 2px solid #bcbcbc7e;
+}
+
+.login-form > h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) ;
+}
+
+.login-form > h1::after {
+  content: "";
+  width: 135px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.login-form:nth-child(2) {
+  text-align: right;
+}
+
+.login-form > form input {
+  width: 90%;
+  height: 55px;
+  font-size: 1.5rem;
+  padding: 0 20px;
+  background-color: #ededed;
+  border: none;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.password-inp {
+  position: relative;
+}
+
+.password-inp > i {
+  font-size: 1.8rem;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.login-form_btn {
+  width: 90%;
+  height: 55px;
+  border: none;
+  outline: none;
+  background-color: #222222;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.3s linear;
+}
+
+.login-form_btn:hover {
+  background-color: #222222be;
+}
+
+.login-form_ul > li {
+  text-align: center;
+  margin-left: 55px;
+  margin-top: 10px;
+}
+
+.login-form_ul > li > a {
+  font-size: 1.6rem;
+}
+
+.login-form_ul > li > a:hover {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.login-form_or {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.login-form_or__hr {
+  width: 220px;
+  margin: 6px 15px;
+  height: 2px;
+}
+
+.facebook-link,
+.google-link {
+  width: 90%;
+  height: 55px;
+  text-align: center;
+  margin-left: 50px;
+  padding-top: 15px;
+  font-size: 1.7rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.facebook-link {
+  background-color: #385898;
+}
+
+.google-link {
+  background-color: #df4a32;
+  margin-top: 20px;
+}
+
+.facebook-link:hover,
+.google-link:hover{
+    opacity: 0.8;
+}
+
+.facebook-link p,
+.google-link p{
+    margin-left: 15px;
+}
+
+.facebook-link i,
+.google-link i{
+   font-size: 2rem;
+   margin-top: 2px;
+}
+
+.backmainpage{
+    position: absolute;
+    top: 150px;
+    left: 17%;
+    font-size: 1.6rem;
+}
+
+.backmainpage > a{
+    display: flex;
+    line-height: 15px;
+    color: #a9a9a9;
+}
+
+.menu_child{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.116);
+}

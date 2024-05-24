@@ -1,0 +1,183 @@
+:root {
+  --primary-color: #c80000;
+  --background-color: #e7e6e6;
+}
+
+.product-table {
+  margin-top: 163px;
+  margin-bottom: 170px;
+}
+
+.prodcut-table_header {
+  height: 40px;
+  line-height: 40px;
+  background-color: var(--background-color);
+  font-size: 1.6rem;
+  display: flex;
+}
+
+.prodcut-table_header a {
+  color: rgb(140, 140, 140);
+  margin-left: 15px;
+}
+
+.prodcut-table_header p,
+.prodcut-table_header span {
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+.cart {
+  margin: 20px 0;
+}
+
+.cart-thead {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.7rem;
+  font-weight: 600;
+  border: 1px solid var(--background-color);
+  line-height: 40px;
+  padding: 8px;
+}
+
+.cart-thead p {
+  text-align: center;
+  margin: 0;
+}
+
+.cart-tbody {
+  margin: 20px 0;
+}
+
+.cart-item {
+  display: flex;
+  text-align: center;
+  box-shadow: 0 0 0 1px var(--background-color);
+  padding: 15px 0;
+  align-items: center;
+  margin-bottom: 1px;
+}
+
+.cart-item_image img {
+  width: 63%;
+}
+
+.cart-item_name_size {
+  text-align: left;
+}
+
+.cart-item_name_size h2 a {
+  font-size: 1.7rem;
+}
+
+.cart-item_price {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.cart-item_inp {
+  position: relative;
+}
+.cart-item_inp input {
+  width: 102px;
+  height: 38px;
+  border: 1px solid var(--background-color);
+  outline: none;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.btn-tru,
+.btn-cong{
+    background-color: var(--background-color);
+    color: black;
+    width: 38px;
+    height: 38px;
+    font-size: 2.1rem;
+    border: 1px solid var(--background-color);
+}
+
+.btn-tru{
+    position: absolute;
+    top: 0;
+    left: 25px;
+}
+
+.btn-cong{
+    position: absolute;
+    top: 0;
+    right: 25px;
+}
+
+.cart-item_delete{
+    font-size: 1.8rem;
+    color: #a0a0a0;
+    cursor: pointer;
+}
+
+.cart-item_inp input:hover .btn-tru{
+    display: block;
+}
+
+.pay{
+    float: right;
+}
+
+.pay-all,
+.pay-btn{
+    display: flex;
+    font-size: 1.7rem;
+}
+
+.pay-all{
+    text-align: right;
+    font-size: 2.4rem;
+    margin: 10px 0;
+    justify-content: right;
+}
+
+.pay-all span{
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 2.6rem;
+}
+
+.pay-btn_buy,
+.pay-btn_back{
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: all .2s ease-in-out;
+}
+
+.pay-btn_buy{
+    padding: 10px 50px;
+    background-color: rgb(228, 1, 1);
+    margin-right: 20px;
+}
+
+.pay-btn_back{
+    padding: 10px 50px;
+    background-color: gray;
+}
+
+.pay-btn_buy:hover{
+    background-color: rgb(177, 2, 2);
+}
+
+.pay-btn_back:hover{
+  background-color:  rgb(228, 1, 1)
+}
+
+.cart-item_trangthai{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin: auto;
+}
+
+.cart-item_name_size > div > p{
+  font-weight: 500;
+  font-size: 1.6rem;
+}

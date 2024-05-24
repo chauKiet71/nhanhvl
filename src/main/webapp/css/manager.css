@@ -1,195 +1,153 @@
-@charset "UTF-8";
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  --primary-color: #c80000;
+  --background-color: #e7e6e6a6;
 }
-.box-left{
-    background-color: #f2f2f2;
-    height: 590px;
+
+.profile {
+  margin-top: 200px;
 }
-.box-left img{
-    width: 80%;
-    object-fit: cover;
-    margin-left: 8%;
-    padding: 10px 0px;
+
+.d-flex {
+  justify-content: space-between;
 }
-.box-left ul{
-    margin: 0 10px;
-    padding: 0;
+
+.nav {
+  font-size: 1.6rem;
 }
-.box-left ul li{
-    list-style: none;
-    padding: 9px 6px;
-    text-align: left;
-    font-size: 15px;
-    display: block;
-    /* font-weight: 500; */
+
+.nav-link {
+  background-color: #fff;
+  color: var(--primary-color);
 }
-.box-left li:hover{
-    background-color: rgb(77, 213, 228);
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: all 0.3s;
+
+.nav-link:hover {
+  font-weight: 600;
+  color: var(--primary-color);
 }
-.box-left ul li a{
-    text-decoration: none;
-    color: black;
-}
-.box-left ul li i{
-    padding-right: 5px;
-}
-/* Thêm kiểu cho mục li khi được active */
+
 .active {
-    background-color: rgb(163, 230, 238);
-    border-radius: 5px;
-    color: white;
-    z-index: 44444;
+  color: var(--primary-color) !important;
+  font-weight: 600;
+  background-color: #fff !important;
 }
-.header li{
-    float: left;
-    list-style: none;
+
+.tab-pane {
+  color: black !important;
 }
-.header li h5{
-    margin-left: 55px;
+
+.tab-pane h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
 }
-.header li button{
-    text-align: right;
+
+.tab-pane-box {
+  display: flex;
+  background-color: var(--background-color);
+  padding: 20px 20px 10px;
+  height: auto;
+  justify-content: flex-start;
+  font-size: 1.5rem;
 }
-.img-header{
-    width: 70%;
-    margin-top: 10px;
+
+.tab-pane-box > div > h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
 }
-.li-right li{
-    text-align: left !important;
-    padding-left: 35% !important;
-    font-size: 14px !important;
-    font-weight: 480 !important;
+
+.tab-pane-box > div:nth-child(2) {
+  text-align: center;
 }
-.box-top{
-    background-color: #f2f2f2;
-    width: 100%;
-    height: 50px;
+
+.tab-pane-box > div:nth-child(4) p,
+.tab-pane-box > div:nth-child(5) p {
+  font-weight: 600;
+  font-size: 1.8rem;
 }
-.box-top h5{
-    float: left;
-    margin-top: 15px;
+
+.tab-pane-box > div:nth-child(5) {
+  text-align: center;
 }
-.account{
-    float: right;
-    border: none;
+
+.tab-pane-box > div > p {
+  font-weight: 500;
 }
-.account img{
-    width: 35px;
-    height: 35px;
-    object-fit: cover;
-    border: 1px solid #e1dbdb;
-    border-radius: 50%;
+
+.info-h3 {
+  font-size: 1.9rem;
+  font-weight: 600;
 }
-.create-sp{
-    float: right;
-    border: none;
-    padding: 7px 10px;
-    border-radius: 5px;
-    background-color: rgb(77, 213, 228);
+
+.info-p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 10px 0 20px;
 }
-.create-sp a{
-    text-decoration: none;
-    color: black;
+
+/*  thong tin cá nhân */
+.account-form {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgba(128, 128, 128, 0.805);
 }
-.form-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+
+.account-form_inp,
+.account-form_select {
+  display: block;
+  width: 70%;
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 0 10px 10px;
 }
-.form-group-admin{
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+
+.account-form_select {
+  padding: 10px 10px 8px;
 }
-.form-group-admin span{
-    width: 20%;
-    text-align: left;
-    color:rgb(4, 74, 139);
-    font-weight: 600;
+
+.bnt_update,
+.btn_changePass {
+  color: #fff;
+  background-color: black;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: none;
+  padding: 9px 38px;
+  margin-top: 30px;
 }
-.form-group span {
-    width: 20%;
-    text-align: left;
-    color:rgb(4, 74, 139);
-    font-weight: 600;
+
+.account-form_changepass {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 25px;
+  color: rgba(128, 128, 128, 0.805);
+  width: 35%;
 }
-.form-group input,
-.form-group select {
-    flex: 2;
+
+.account-form_changepass > div{
+  position: relative;
 }
-.form-container {
-    display: flex;
-    justify-content: space-between;
+
+.account-form_changepass > div > i{
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  cursor: pointer;
 }
-.form-total{
-    height: 100px;
-    width: 90%;
-    background-color: aliceblue;
+
+/* đơn hàng của tôi */
+.account-bill{
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+  font-size: 1.6rem;
 }
-.nav-menu{
-    width: 100%;
-    height: auto;
-    background-color: rgb(77, 142, 228);
-    padding: 2px 0px !important;
+.account-bill-header{
+  display: flex;
+  justify-content: space-between;
 }
-.nav-menu a{
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-}
-.form-total{
-    border-radius: 10px;
-}
-.form-total img{
-    width: 80px;
-    height: 50px;
-    object-fit: cover;
-    padding-left: 10px;
-    margin-top: 20px;
-}
-.form-total p{
-    font-size: 11px;
-    margin-top: 2px;
-}
-.form-total h6{
-    font-size: 13px;
-    margin: 0;
-    font-weight: 700;
-}
-.catetory-box-right{
-    text-align: right;
-}
-.center-y{
-    margin-top: 30px;
-    margin-right: 20px;
-}
-.admin-recently h6{
-    font-weight: 600;
-    padding: 10px 0px 10px 20px;
-    margin: 0;
-}
-.order-recently h6{
-    font-weight: 600;
-    padding: 10px 0px 10px 20px;
-    margin: 0;
-}
-.admin-recently, .order-recently{
-    border: 1px solid rgb(235, 231, 231);
-    border-radius: 5px;
-}
-.admin-recently, .order-recently table thead tr th{
-    font-size: 13px !important;
-}
-.admin-recently, .order-recently table tbody tr td{
-    font-size: 12px !important;
-}
-table a{
-    color: red;
-}
+
+
+
+
+

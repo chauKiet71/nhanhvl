@@ -1,0 +1,305 @@
+@charset "UTF-8";
+:root {
+  --type-color: #ed1c24;
+  --background-color: #f2f2f2;
+}
+
+.banner {
+  width: 100%;
+  height: 700px;
+  margin-top: 138px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.prodcut-table_header {
+  margin-top: -25px;
+}
+
+.prodcut-table_header p {
+  color: var(--type-color);
+}
+
+/* ================ TYPE PRODUCT ================== */
+.type-flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 50px;
+}
+
+.border1px {
+  /* box-shadow: inset 0 0 0 1px rgb(37, 35, 35); */
+  box-sizing: border-box;
+}
+
+.accordion-item {
+  font-size: 1.6rem;
+  border: none;
+}
+
+.accordion-item_more {
+  background-color: var(--background-color);
+  margin-bottom: 10px;
+}
+
+.type-btn {
+  background-color: var(--type-color);
+  outline: none;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  width: 100%;
+  height: 43px;
+  text-align: left;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.type-btn > p {
+  margin-left: 40px;
+}
+
+.margin0 {
+  margin-bottom: 0;
+}
+
+.fontsize {
+  font-size: 1.6rem;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.accordion-body_flex {
+  display: flex;
+  cursor: pointer;
+  margin: 10px 0;
+  position: relative;
+}
+
+.accordion-body_flex > p {
+  margin-left: 10px;
+}
+
+.accordion-body_flex:hover .xam {
+  color: var(--type-color);
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Create a custom checkbox */
+.custom-checkbox {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Add a checkmark to the custom checkbox */
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 4px;
+  top: -1px;
+  width: 6px;
+  height: 12px;
+  border: solid var(--type-color);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Show the checkmark when the checkbox is checked */
+input[type="checkbox"]:checked + .custom-checkbox::after {
+  display: block;
+}
+
+/* hiển thị dấu kiểm khi hover */
+.accordion-body_flex:hover .custom-checkbox::after {
+  display: block;
+}
+
+/* Change the custom checkbox's appearance when checked */
+input[type="checkbox"]:checked + .custom-checkbox {
+  border-color: var(--type-color);
+  background-color: #ffffff;
+}
+
+input[type="checkbox"]:checked + .xam {
+  color: var(--type-color);
+}
+
+/* màu sắc hiển thị khi hover */
+.accordion-body_flex:hover .custom-checkbox {
+  border-color: var(--type-color);
+  background-color: #ffffff;
+}
+
+.collap-btn {
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+}
+
+/* ============== THANH SCROLL SỐ TIỀN ============== */
+.scroll-price {
+  margin-top: 30px;
+}
+
+.scroll-price h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+#scroll {
+  width: 96%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.noUi-target {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.noUi-connect {
+  background: var(--type-color);
+  border-radius: 10px;
+}
+.noUi-handle {
+  background: #fff;
+  border: 2px solid var(--type-color);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.noUi-horizontal .noUi-handle {
+  top: -7px;
+}
+.noUi-tooltip {
+  background: var(--type-color);
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+#slider-value {
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+.value-display {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* ========= BẢNG SIZE ================ */
+.size {
+  margin-top: 30px;
+}
+
+.size h2 {
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.size > .accordion-body_flex {
+  font-size: 1.6rem;
+  line-height: 30px;
+}
+
+.scroll-btn,
+.scroll-btn2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border: none;
+  padding-left: 10px;
+  font-size: 1.9rem;
+  font-weight: 600;
+  align-items: center;
+  width: 100%;
+  height: 43px;
+}
+
+.scroll-btn > p {
+  text-align: right;
+  padding-right: 17px;
+  font-weight: 700;
+}
+
+.scroll-btn2 > p {
+  text-align: right;
+  padding-right: 17px;
+}
+
+.xam {
+  width: 120px;
+  position: absolute;
+  top: -2px;
+  left: 14px;
+}
+
+.changeBg {
+  line-height: 43px;
+  background-color: var(--type-color);
+  color: #fff;
+}
+
+
+/* ================= TYPE PRODUCT =================== */
+.type-product {
+  /* background-color: #ed1c24; */
+}
+
+.type-product h2{
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+.type-product_sort{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.6rem;
+}
+.type-product_sort p{
+  margin-right: 20px;
+}
+.type-product_sort select{
+  outline: none;
+  width: 300px;
+  padding: 0 20px;
+}
+
+.product-list2 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Khoảng cách giữa các sản phẩm */
+  max-width: 792px; /* Độ rộng tối đa của danh sách sản phẩm */
+  margin: 0 auto; /* Căn giữa danh sách sản phẩm */
+}
