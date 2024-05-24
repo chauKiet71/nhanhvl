@@ -1,0 +1,195 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box-left{
+    background-color: #f2f2f2;
+    height: 590px;
+}
+.box-left img{
+    width: 80%;
+    object-fit: cover;
+    margin-left: 8%;
+    padding: 10px 0px;
+}
+.box-left ul{
+    margin: 0 10px;
+    padding: 0;
+}
+.box-left ul li{
+    list-style: none;
+    padding: 9px 6px;
+    text-align: left;
+    font-size: 15px;
+    display: block;
+    /* font-weight: 500; */
+}
+.box-left li:hover{
+    background-color: rgb(77, 213, 228);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.box-left ul li a{
+    text-decoration: none;
+    color: black;
+}
+.box-left ul li i{
+    padding-right: 5px;
+}
+/* Thêm kiểu cho mục li khi được active */
+.active {
+    background-color: rgb(163, 230, 238);
+    border-radius: 5px;
+    color: white;
+    z-index: 44444;
+}
+.header li{
+    float: left;
+    list-style: none;
+}
+.header li h5{
+    margin-left: 55px;
+}
+.header li button{
+    text-align: right;
+}
+.img-header{
+    width: 70%;
+    margin-top: 10px;
+}
+.li-right li{
+    text-align: left !important;
+    padding-left: 35% !important;
+    font-size: 14px !important;
+    font-weight: 480 !important;
+}
+.box-top{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+}
+.box-top h5{
+    float: left;
+    margin-top: 15px;
+}
+.account{
+    float: right;
+    border: none;
+}
+.account img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border: 1px solid #e1dbdb;
+    border-radius: 50%;
+}
+.create-sp{
+    float: right;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    background-color: rgb(77, 213, 228);
+}
+.create-sp a{
+    text-decoration: none;
+    color: black;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.form-group-admin{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.form-group-admin span{
+    width: 20%;
+    text-align: left;
+    color:rgb(4, 74, 139);
+    font-weight: 600;
+}
+.form-group span {
+    width: 20%;
+    text-align: left;
+    color:rgb(4, 74, 139);
+    font-weight: 600;
+}
+.form-group input,
+.form-group select {
+    flex: 2;
+}
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+.form-total{
+    height: 100px;
+    width: 90%;
+    background-color: aliceblue;
+}
+.nav-menu{
+    width: 100%;
+    height: auto;
+    background-color: rgb(77, 142, 228);
+    padding: 2px 0px !important;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.form-total{
+    border-radius: 10px;
+}
+.form-total img{
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.form-total p{
+    font-size: 11px;
+    margin-top: 2px;
+}
+.form-total h6{
+    font-size: 13px;
+    margin: 0;
+    font-weight: 700;
+}
+.catetory-box-right{
+    text-align: right;
+}
+.center-y{
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.admin-recently h6{
+    font-weight: 600;
+    padding: 10px 0px 10px 20px;
+    margin: 0;
+}
+.order-recently h6{
+    font-weight: 600;
+    padding: 10px 0px 10px 20px;
+    margin: 0;
+}
+.admin-recently, .order-recently{
+    border: 1px solid rgb(235, 231, 231);
+    border-radius: 5px;
+}
+.admin-recently, .order-recently table thead tr th{
+    font-size: 13px !important;
+}
+.admin-recently, .order-recently table tbody tr td{
+    font-size: 12px !important;
+}
+table a{
+    color: red;
+}
