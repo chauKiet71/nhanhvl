@@ -13,12 +13,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class AsmApplication {
 
 	public static void main(String[] args) {
-		System.out.println("shjsdhjs");
 		SpringApplication.run(AsmApplication.class, args);
 	}
 	
 	@RequestMapping("/index")
 	public String requestMethodName() {
-		return "user/index";
+		return "admin/manager";
 	}
 }
