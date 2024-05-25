@@ -12,7 +12,9 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/style.css">	
-    
+    <link rel="icon" type="image/png" sizes="16x16"  href="/image/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
 </head>
 
 <body>

@@ -19,6 +19,9 @@
     <link rel="stylesheet" href=" /css/style.css">
     <link rel="stylesheet" href=" /css/cart.css">
     <link rel="stylesheet" href=" /css/type.css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="/image/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
 </head>
 
 <body>

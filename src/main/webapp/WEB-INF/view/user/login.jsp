@@ -15,6 +15,9 @@
     <link rel="stylesheet" href=" /css/base.css">
     <link rel="stylesheet" href=" /css/style.css">
     <link rel="stylesheet" href=" /css/login.css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="/image/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
 </head>
 
 <body>

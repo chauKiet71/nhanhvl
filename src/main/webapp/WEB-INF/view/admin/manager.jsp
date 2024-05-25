@@ -15,6 +15,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <script src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="stylesheet" href="/css/manager.css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="/image/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
 </head>
 
 <body ng-app="myApp">
