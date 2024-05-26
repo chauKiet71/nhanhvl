@@ -18,6 +18,6 @@ public class AsmApplication {
 	
 	@RequestMapping("/index")
 	public String requestMethodName() {
-		return "user/index";
+		return "admin/manager";
 	}
 }

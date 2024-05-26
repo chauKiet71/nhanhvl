@@ -44,36 +44,36 @@
                 </li>
             </ul>
         </div>
-        <div class="box-left col-md-2" style="padding: 0;">
+       <div class="box-left col-md-2" style="padding: 0;">
             <ul style="margin-right: 10%;" id="menu">
-                <li>
+                <li  data-url="#!controller">
                     <div style="padding-left: 30px;">
-                        <i class="fa-solid fa-house"></i> <a href="#!controller">Bảng điều khiển</a>
+                        <i class="fa-solid fa-house"></i> Bảng điều khiển
                     </div>
                 </li>
-                <li>
+                <li  data-url="#!user">
                     <div style="padding-left: 30px;">
-                        <i class="fa-solid fa-user"></i> <a href="#!user">Người dùng</a>
+                        <i class="fa-solid fa-user"></i> Người dùng
                     </div>
                 </li>
-                <li>
+                <li  data-url="#!catetory">  
                     <div style="padding-left: 30px;">
-                        <i class="fa-solid fa-bars"></i> <a href="#!catetory">Danh mục</a>
+                        <i class="fa-solid fa-bars"></i> Danh mục
                     </div>
                 </li>
-                <li>
+                <li  data-url="#!san-pham">
                     <div style="padding-left: 30px;">
-                        <i class="fa-solid fa-cart-shopping"></i> <a href="#!san-pham">Sản phẩm</a>
+                        <i class="fa-solid fa-cart-shopping"></i> Sản phẩm
                     </div>
                 </li>
-                <li>
+                <li data-url="#!order">
                     <div style="padding-left: 30px;">
-                        <i class="fa-solid fa-motorcycle"></i> <a href="#!order">Đơn hàng</a>
+                        <i class="fa-solid fa-motorcycle"></i> Đơn hàng
                     </div>
                 </li>
-                <li>
+                <li data-url="#!">
                     <div style="padding-left: 30px;">
-                        <i class="fa-solid fa-chart-bar"></i> <a href="#">Thống kê</a>
+                        <i class="fa-solid fa-chart-bar"></i> Thống kê
                     </div>
                 </li>
             </ul>
@@ -100,6 +100,11 @@
         </div>
     </div>
     <script>
+	    document.querySelectorAll('li[data-url]').forEach(function(li) {
+	        li.addEventListener('click', function() {
+	            window.location.href = this.getAttribute('data-url');
+	        });
+	    });
         // Lấy tất cả các mục li trong danh sách
         const menuItems = document.querySelectorAll('#menu li');
         // Thêm sự kiện click cho mỗi mục li
@@ -137,6 +142,9 @@
                 })
                 .when("/createCatetory", {
                     templateUrl: "createCatetory.jsp"
+                })
+                .otherwise({
+                    templateUrl: 'dashboard.jsp' 
                 })
         })
     </script>
