@@ -28,7 +28,7 @@
                     <img src="imageQuantri/nhanh.png" class="img-header" alt="">
                 </li>
                 <li>
-                    <h5>Bảng điều khiển</h5>
+                    <h5 id="dynamic-heading">Bảng điều khiển</h5>
                 </li>
                 <li style="position: absolute; right: 0;">
                     <div class="dropdown">
@@ -147,6 +147,27 @@
                     templateUrl: 'dashboard.jsp' 
                 })
         })
+                var menuItemss = document.querySelectorAll('#menu li');
+        // Lấy thẻ h1
+        var dynamicHeading = document.getElementById('dynamic-heading');
+
+        // Lặp qua từng thẻ li để gán sự kiện click
+        menuItems.forEach(function (item) {
+            item.addEventListener('click', function () {
+                // Lấy nội dung của thẻ li được click
+                var content = item.textContent;
+                // Gán nội dung của thẻ li vào thẻ h1
+                dynamicHeading.textContent = content;
+
+                // Xóa nội dung thẻ li đã click trước đó
+                menuItems.forEach(function (item) {
+                    item.classList.remove('active');
+                });
+
+                // Thêm lớp active cho thẻ li được click hiện tại
+                item.classList.add('active');
+            });
+        });
     </script>
 </body>
 
